@@ -74,7 +74,25 @@ Example 570.jpg from dataset -> output :
 
 6. **Submission result of detection as csv**
 
-
+```python
+import glob
+from os import walk
+import pandas as pd
+test_path='/Users/oublal/Downloads/CNN_CharacterRecognition/dataset/9/'
+data=pd.DataFrame()
+#data["id_image"]=test["id_image"]
+data["id_image"]=0
+data["id_string"]=0
+for (dirpath, dirnames, filenames) in walk(test_path):
+    data["img_name"]=filenames
+for (dirpath, dirnames, filenames) in walk(test_path):
+    data["path"]=dirpath
+   # break
+data["id_string"]=data.apply(lambda x: predict_all(x.img_name, x.path,
+                                                 video_path=None, is_cnn=False,is_image=True), axis=1)
+submussion=data.drop(colomns=['img_name','path'])
+submussion.to_csv('submission.csv',index=False)
+```
 
 7. **.py file /code/..:** if you want to check the plate number:
 
