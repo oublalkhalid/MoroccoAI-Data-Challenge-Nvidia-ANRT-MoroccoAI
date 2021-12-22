@@ -50,11 +50,20 @@
 ```python
 cd plate-recognition-yolo-cnn
 pip install -r requirements.txt #for windows
-pip3 install -r requirements.txt #for mac or windows
+pip3 install -r requirements.txt #for mac or linux
 ```
 > Note: You must have all the python package to run the project
 
-4. You can run the project from command prompt with theese command
+4. **Notebook cas: ** 
+
+For live **video input** and use **CNN** type this command
+```python
+license = predict('../' + saved_image, output_car_path = '../output_cnn.jpg', output_license_path_original = '../license_original_cnn.jpg', output_license_path = '../license_cnn.jpg', is_cnn=True, is_image=True)
+```
+
+
+
+5. You can run the project from command prompt with theese command
 
 - For **image** input and use **CNN** type this command
 ```python
@@ -62,20 +71,4 @@ python main.py #for windows
 python3 main.py #for mac or linux
 ```
 
-- For live **video input** and use **CNN** type this command
-```python
-python camera.py #for windows
-python3 camera.py #for mac or linux
-```
 
-- For **image** input and use **easyocr** type this command
-```python
-python image_ocr.py #for windows
-python3 image_ocr.py #for mac or linux
-```
-
-- For **live video** input and use **easyocr** type this command
-```python
-python camera_ocr.py #for windows
-python3 camera_ocr.py #for mac or linux
-```
