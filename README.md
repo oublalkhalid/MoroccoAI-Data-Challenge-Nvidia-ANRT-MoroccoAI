@@ -54,7 +54,7 @@ pip3 install -r requirements.txt #for mac or linux
 ```
 > Note: You must have all the python package to run the project
 
-4. **Notebook cas:** if you want to check the plate number:
+4. **Notebook cas <<Detect_Morocco_Plates_YoloFN_Detect_Recognition.ipynb>>:** if you want to check the plate number:
 
 For live **video input** and use **CNN** type this command
 ```python
@@ -71,4 +71,13 @@ license = predict('../' + saved_image, output_car_path = '../output_cnn.jpg', ou
 Example 570.jpg from dataset -> output :
 
 <img src="images/image1.png" alt="">
+
+6. **Submission result of detection as csv**
+
+
+
+7. **.py file /code/..:** if you want to check the plate number:
+
+You must first define some parameters like path_input, path_output, test_data (proposed for this challenge). and then run the 3 files in order ( preprocessig, training yolo, training yolo characters, then detection and recognition) 
+
 
