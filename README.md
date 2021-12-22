@@ -32,4 +32,7 @@
 
    if you want to create your own object detection with custom dataset you can watch these helpful tutorial to achieve that in [here](https://www.youtube.com/watch?v=GRtgLlwxpc4)
 
-
+3. **Data - Augementation and Transformation **
+  
+  This is an unbalanced case of the classes, what it does is perform a log(y) transformation on the data just before the CNN input.
+<img src="images/non-eq.png" alt="">
