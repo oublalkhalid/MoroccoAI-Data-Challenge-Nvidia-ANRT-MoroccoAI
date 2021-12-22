@@ -32,7 +32,54 @@
 
    if you want to create your own object detection with custom dataset you can watch these helpful tutorial to achieve that in [here](https://www.youtube.com/watch?v=GRtgLlwxpc4)
 
-3. **Data - Augementation and Transformation **
+3. **Data Augementation and Transformation**
   
   This is an unbalanced case of the classes, what it does is perform a log(y) transformation on the data just before the CNN input.
 <img src="images/non-eq.png" alt="">
+
+3. **Data Augementation and Transformation**
+  
+  This is an unbalanced case of the classes, what it does is perform a log(y) transformation on the data just before the CNN input.
+<img src="images/non-eq.png" alt="">
+
+
+## How to run this program
+
+1.  You must have python 3 install in your computer if you haven't python you can download and install your python from [here](https://www.python.org/downloads/)
+2.  Clone these github repo with these command
+  ```git
+  git clone https://github.com/ragilhadi/plate-recognition-yolo-cnn
+  ```
+3. Run this command to install all the python packages
+```python
+cd plate-recognition-yolo-cnn
+pip install -r requirements.txt #for windows
+pip3 install -r requirements.txt #for mac or windows
+```
+> Note: You must have all the python package to run the project
+
+4. You can run the project from command prompt with theese command
+
+- For **image** input and use **CNN** type this command
+```python
+python main.py #for windows
+python3 main.py #for mac or linux
+```
+
+- For live **video input** and use **CNN** type this command
+```python
+python camera.py #for windows
+python3 camera.py #for mac or linux
+```
+
+- For **image** input and use **easyocr** type this command
+```python
+python image_ocr.py #for windows
+python3 image_ocr.py #for mac or linux
+```
+
+- For **live video** input and use **easyocr** type this command
+```python
+python camera_ocr.py #for windows
+python3 camera_ocr.py #for mac or linux
+```
