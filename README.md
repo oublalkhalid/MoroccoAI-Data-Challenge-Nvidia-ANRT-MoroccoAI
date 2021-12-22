@@ -63,22 +63,13 @@ is_image=True # it's not stream video
 is_image=False # stream video with FPS=2
 is_cnn=True # Combine CNN Flow normalizing and Yolov3 
 ```
-5. show an image:
-
-```python
-license = predict('../' + saved_image, output_car_path = '../output_cnn.jpg', output_license_path_original = '../license_original_cnn.jpg', output_license_path = '../license_cnn.jpg', is_cnn=True, is_image=True)
-```
-Example 570.jpg from dataset -> output :
-
-<img src="images/image1.png" alt="">
-
-6. **Submission result of detection as csv**
+5. **How can I submit all the plates detection and recognition on dataset as a csv file?**
 
 ```python
 import glob
 from os import walk
 import pandas as pd
-test_path='/Users/oublal/Downloads/CNN_CharacterRecognition/dataset/9/'
+test_path='/home/oublal/challengeMoroccoAI/test/'
 data=pd.DataFrame()
 #data["id_image"]=test["id_image"]
 data["id_image"]=0
@@ -93,6 +84,15 @@ data["id_string"]=data.apply(lambda x: predict_all(x.img_name, x.path,
 submussion=data.drop(colomns=['img_name','path'])
 submussion.to_csv('submission.csv',index=False)
 ```
+6. show an image:
+
+```python
+license = predict('../' + saved_image, output_car_path = '../output_cnn.jpg', output_license_path_original = '../license_original_cnn.jpg', output_license_path = '../license_cnn.jpg', is_cnn=True, is_image=True)
+```
+Example 570.jpg from dataset -> output :
+
+<img src="images/image1.png" alt="">
+
 
 7. **.py file /code/..:** if you want to check the plate number:
 
