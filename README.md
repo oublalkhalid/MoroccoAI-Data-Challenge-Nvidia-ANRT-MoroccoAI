@@ -63,15 +63,12 @@ is_image=True # it's not stream video
 is_image=False # stream video with FPS=2
 is_cnn=True # Combine CNN Flow normalizing and Yolov3 
 ```
+5. show an image:
 
-
-
-5. You can run the project from command prompt with theese command
-
-- For **image** input and use **CNN** type this command
 ```python
-python main.py #for windows
-python3 main.py #for mac or linux
+license = predict('../' + saved_image, output_car_path = '../output_cnn.jpg', output_license_path_original = '../license_original_cnn.jpg', output_license_path = '../license_cnn.jpg', is_cnn=True, is_image=True)
 ```
+Example 570.jpg from dataset -> output :
 
+<img src="images/image1.png" alt="">
 
