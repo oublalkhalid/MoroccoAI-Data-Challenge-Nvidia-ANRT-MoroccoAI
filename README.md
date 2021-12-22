@@ -1,16 +1,15 @@
 ### ✨ MoroccoAI-Data-Challenge ✨
 
 <img src="images/workflow.png" alt="workflow">
+
 # Plate Recognition Using YOLO and CNN  ✨
 
-- [Plate Recognition Using YOLO and CNN](#plate-recognition-using-yolo-and-cnn)
+  - [Plate Recognition Using YOLO and CNN](#plate-recognition-using-yolo-and-cnn)
   - [Intorduction](#intorduction)
   - [Process Create This Project](#process-create-this-project)
   - [How to run this program](#how-to-run-this-program)
   - [Preview This Project](#preview-this-project)
   - [Conclustion my own Flow Normalizing model vs easyocr](#conclustion-my-own-cnn-model-vs-easyocr)
-
-
 
 ## Abstract
   This project is reply to Morocco AI challenge (conference december), which aims to detect the plate with the label name type of "XXXX-ﺏ-YY" , our project Pipeline detect only 19 class called $"0,1,2,3,4,5,6,7,8,9 and ww ,ا, ب ,ج ,ش, و ,المغرب ,ه ,د" . After that take the bounding box and get the text inside the bounding box. To get the text inside the bounding box our strategy is to use 2 neural networks with normalized flow and a Yolo to detect each character. If the character has a projection far from the normal distribution (the network is trained to semi-supervise) the yolo proceeds to propose a new bounding box the final decision presents a strong accuracy.
