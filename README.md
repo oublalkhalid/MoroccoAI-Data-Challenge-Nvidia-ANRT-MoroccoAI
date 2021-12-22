@@ -1,7 +1,7 @@
 ### ✨ MoroccoAI-Data-Challenge ✨
 
 ## Abstract
-  This project provides a solution to Morocco's AI challenge (conference of december), which aims to detect the plate with the label name as type of "XXXX-ﺏ-YY" , our project Pipeline detect only 19 class called ```0,1,2,3,4,5,6,7,8,9 and ww ,ا, ب ,ج ,ش, و ,المغرب ,ه ,د``` . After that take the bounding box and get the text inside the bounding box. To get the text inside the bounding box our strategy is to use 2 neural networks with flow normalizing to detect each character. If the character has a projection far scale a normal distribution (the network is trained on semi-supervise strategy) the yolo proceeds to propose a new bounding box the final decision presents a strong confidence. The detection and recognition result lead us among the top 10% of this challenge.
+  This project provides a solution to Morocco's AI challenge (conference of december), which aims to detect the plate with the label name as type of ```XXXX-ﺏ-YY``` , our project Pipeline detect only 19 class called ```0,1,2,3,4,5,6,7,8,9 and ww ,ا, ب ,ج ,ش, و ,المغرب ,ه ,د``` . After that take the bounding box and get the text inside the bounding box. To get the text inside the bounding box our strategy is to use 2 neural networks with flow normalizing to detect each character. If the character has a projection far scale a normal distribution (the network is trained on semi-supervise strategy) the yolo proceeds to propose a new bounding box the final decision presents a strong confidence. The detection and recognition result lead us among the top 10% of this challenge.
 
 <img src="images/workflow.png" alt="workflow">
 
