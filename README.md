@@ -39,7 +39,13 @@
 
 4. **Downoald Weights and config files**
   All pretrained weights are saved on:  [Weights and config](https://drive.google.com/drive/folders/1qTvKYEfpLR-4hcFaeT11aB_bpCX3lQUi?usp=sharing)
-<img src="../images/check_out.png" alt="ckeck_out">
+<img src="images/check_out.png" alt="ckeck_out">
+
+5. **Downoald dataset**
+  a new database has been created and labelled with Yolo format.
+  a- [annotated database](https://drive.google.com/drive/folders/1ZFdMo-CyisVzXsSioRH9KrbbD1J4_BMH?usp=sharing)
+  b- [annotated database](https://drive.google.com/drive/folders/1ZFdMo-CyisVzXsSioRH9KrbbD1J4_BMH?usp=sharing)
+  c- [annotated database](https://drive.google.com/drive/folders/1ZFdMo-CyisVzXsSioRH9KrbbD1J4_BMH?usp=sharing)
 
 ## How to run this program
 
