@@ -37,7 +37,9 @@
   This is an unbalanced case of the classes, what it does is perform a log(y) transformation on the data just before the CNN input.
 <img src="images/non-eq.png" alt="">
 
-
+4. **Downoald Weights and config files**
+  All pretrained weights are saved on:  [Weights and config](https://drive.google.com/drive/folders/1qTvKYEfpLR-4hcFaeT11aB_bpCX3lQUi?usp=sharing)
+<img src="../images/check_out.png" alt="ckeck_out">
 
 ## How to run this program
 
