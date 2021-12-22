@@ -54,11 +54,13 @@ pip3 install -r requirements.txt #for mac or linux
 ```
 > Note: You must have all the python package to run the project
 
-4. **Notebook cas: ** 
+4. **Notebook cas:** if you want to check the plate number:
 
 For live **video input** and use **CNN** type this command
 ```python
 license = predict('../' + saved_image, output_car_path = '../output_cnn.jpg', output_license_path_original = '../license_original_cnn.jpg', output_license_path = '../license_cnn.jpg', is_cnn=True, is_image=True)
+is_image=True # it's not stream video 
+is_image=False # stream video with FPS=2
 ```
 
 
