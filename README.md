@@ -23,6 +23,8 @@
    You can label your dataset image using [Labelimg]() or [makesense.ai]( and choose the YOLO format or the file with extenstion *.txt
 <img src="images/gif_characters.gif" alt="gif_characters">
 
+<img src="images/gif_plates.gif" alt="">
+
 2. **Create YOLO model for object detection**
    in these project i use YOLOv3  to make object deteaction model. You can learn more about the yolo in the documentation [link here](https://github.com/ultralytics/yolov5)
 
