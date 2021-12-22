@@ -1,7 +1,7 @@
 # MoroccoAI-Data-Challenge
 
 <img src="images/workflow.png" alt="workflow">
-# Plate Recognition Using YOLO and CNN
+# Plate Recognition Using YOLO and CNN  ✨
 
 - [Plate Recognition Using YOLO and CNN](#plate-recognition-using-yolo-and-cnn)
   - [Intorduction](#intorduction)
