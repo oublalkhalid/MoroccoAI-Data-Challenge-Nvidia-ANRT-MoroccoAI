@@ -13,7 +13,7 @@
 
 
 ## Abstract
-  This project is a response to the Morocco AI challenge, which aims to detect the plate with label name type of ***"XXXX-ﺏ-YY"*** , our Pipline project only detect 17 class called "0,1,2,3,4,5,6,7,8,9 and ا, ب ,ج ,ش ,المغرب ,ه ,د " . after that take the bounding box and get the text inside the bounding box. to get the text inside bounding box our strategy use 2 method first using my own trained **Flow Normalizing Model**.
+  This project is reply to Morocco AI challenge (conference december), which aims to detect the plate with the label name type of "XXXX-ﺏ-YY" , our project Pipeline detect only 19 class called $"0,1,2,3,4,5,6,7,8,9 and ww ,ا, ب ,ج ,ش, و ,المغرب ,ه ,د" . After that take the bounding box and get the text inside the bounding box. To get the text inside the bounding box our strategy is to use 2 neural networks with normalized flow and a Yolo to detect each character. If the character has a projection far from the normal distribution (the network is trained to semi-supervise) the yolo proceeds to propose a new bounding box the final decision presents a strong accuracy.
 
 ## Process Create This Project
 
