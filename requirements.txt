@@ -1,1 +1,7 @@
+opencv-python
+numpy
 tensorflow
+imutils
+flask
+xmltodict
+Pillow
