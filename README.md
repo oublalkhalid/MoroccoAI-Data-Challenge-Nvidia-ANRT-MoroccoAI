@@ -61,6 +61,7 @@ For live **video input** and use **CNN** type this command
 license = predict('../' + saved_image, output_car_path = '../output_cnn.jpg', output_license_path_original = '../license_original_cnn.jpg', output_license_path = '../license_cnn.jpg', is_cnn=True, is_image=True)
 is_image=True # it's not stream video 
 is_image=False # stream video with FPS=2
+is_cnn=True # Combine CNN Flow normalizing and Yolov3 
 ```
 
 
