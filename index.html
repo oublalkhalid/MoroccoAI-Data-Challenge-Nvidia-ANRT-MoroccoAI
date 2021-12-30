@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Data Moroccan ALPR Plus</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+</head>
+<style type="text/css">
+	.body-wrap {
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.text-light {
+    color: #f0f0f0;
+}
+.text-light2 {
+    color: #f0f0f0;
+
+
+}
+.button-primary {
+    background: #d5707e;
+}
+</style>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center text-light">
+				<div class="hero-bg"></div>
+				<div class="hero-particles-container">
+					<canvas id="hero-particles"></canvas>
+				</div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">Open Data Moroccan ALPR+</h1>
+	                        <p class="hero-paragraph">
+	                        	
+	                        <div class="hero-cta">
+								<a class="button button-primary button-wide-mobile" href="#">Get annotated data</a>
+								
+								<a class="button button-primary button-wide-mobile" href="#">Models</a>
+							</div>
+						</div>
+						<div class="mockup-container">
+							<div class="mockup-bg">
+								               	
+							</div>
+							<img class="device-mockup" src="dist/images/iphone-hero.png" alt="iPhone Hero">
+</div>
+<div>
+	                        <h2>Cite</h2>
+                    <p >
+                    If you use Moroccan ALPR+ dataset in your research please cite it: 
+                        <pre align="justify" style="color: #000000">@misc{APLRMorocco,
+  author =   {Khalid Oublal, Moroccan Artificial Intelligence Society, SGG, UPM6},
+  title={Dataset Morocco ALPR, Created on Data-challenge which addresses to resolve the problem of ANPR in Morocco licensed vehicles.},
+  url={https://www.morocco.ai/events/conferences/MoroccoAI-conf-2021/pages/datachallenge.html},
+  year={2021}
+}
+  year = {2021--2021}
+}</pre>
+
+<p align="justify">
+							We note that a new database of data has been introduced and inspected in order to increase the dataset of the Moroccan ALPR, moreover this dataset contains several levels of labeling (vehicles, plates care, and characters) and is being worked on using algorithms of assistance to labelling (Data Engineering).<br>
+							We have injected some images of the SSG dataset and saudi arabic in this base the condition of injection is this one:<br>
+	                        	 - If all the characters of the plate are digits with a character included in the list of APLR characters or in the plates Moroccan.
+	                        	<br>
+	                        	- Respect the order and the colors of most of the plates by adding only white and black plates but written in gray or white.
+
+	                        </p>
+
+	                         <h2>Tools</h2>
+                    <p > 
+                        <pre align="justify" style="color: #000000"> pip install labelstudio</pre>
+                        </div>
+                        <img class="device-mockup" src="dist/images/label2.gif" alt="iPhone Hero">
+							<img class="device-mockup" src="dist/images/label.gif" alt="iPhone Hero">
+						</div>
+
+						<h3 align="justify">Get from PyPI but only python3.0 or above</h3>
+<p align="justify">	This is the simplest (one-command) install method on modern Linux distributions such as Ubuntu and Fedora. </p>
+<pre align="justify" style="color: #000000"> 
+pip3 install labelImg
+labelImg
+labelImg [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+</pre>
+
+<h5 align="justify">Build from source</h5>
+<p align="justify">Linux/Ubuntu/Mac requires at least Python 2.6 and has been tested with PyQt 4.8. However, Python 3 or above and PyQt5 are strongly recommended. </p>
+
+<h5 align="justify"> Ubuntu Linux
+Python 3 + Qt5
+</h5>
+
+<pre align="justify" style="color: #000000"> 
+sudo apt-get install pyqt5-dev-tools
+sudo pip3 install -r requirements/requirements-linux-python3.txt
+make qt5py3
+python3 labelImg.py
+python3 labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+</pre>
+
+<h5 align="justify">
+macOS
+Python 3 + Qt5
+</h5>
+
+<pre align="justify" style="color: #000000"> 
+brew install qt  # Install qt-5.x.x by Homebrew
+brew install libxml2
+</pre>
+<p align="justify">
+or using pip
+</p >
+
+<pre align="justify" style="color: #000000"> 
+pip3 install pyqt5 lxml # Install qt and lxml by pip
+make qt5py3
+python3 labelImg.py
+python3 labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+Python 3 Virtualenv (Recommended)
+</pre>
+
+<h5 align="justify">
+Virtualenv can avoid a lot of the QT / Python version issues
+</h5>
+
+
+<pre align="justify" style="color: #000000"> 
+brew install python3
+pip3 install pipenv
+pipenv run pip install pyqt5==5.15.2 lxml
+pipenv run make qt5py3
+pipenv run python3 labelImg.py
+[Optional] rm -rf build dist; python setup.py py2app -A;mv "dist/labelImg.app" /Applications
+Note: The Last command gives you a nice .app file with a new SVG Icon in your /Applications folder. You can consider using the script: build-tools/build-for-macos.sh
+</pre>
+
+<h5 align="justify">
+Windows
+Install Python, PyQt5 and install lxml.
+</h5>
+<p align="justify">
+Open cmd and go to the labelImg directory
+</p>
+
+<pre align="justify" style="color: #000000"> 
+pyrcc4 -o libs/resources.py resources.qrc
+</pre>
+
+<p align="justify">
+For pyqt5, pyrcc5 -o libs/resources.py resources.qrc
+</p>
+
+
+<pre align="justify" style="color: #000000"> 
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+Windows + Anaconda
+Download and install Anaconda (Python 3+)
+</pre>
+
+<p align="justify">
+Open the Anaconda Prompt and go to the labelImg directory
+</p>
+
+<pre align="justify" style="color: #000000"> 
+conda install pyqt=5
+conda install -c anaconda lxml
+pyrcc5 -o libs/resources.py resources.qrc
+python labelImg.py
+python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+Use Docker
+docker run -it \
+--user $(id -u) \
+-e DISPLAY=unix$DISPLAY \
+--workdir=$(pwd) \
+--volume="/home/$USER:/home/$USER" \
+--volume="/etc/group:/etc/group:ro" \
+--volume="/etc/passwd:/etc/passwd:ro" \
+--volume="/etc/shadow:/etc/shadow:ro" \
+--volume="/etc/sudoers.d:/etc/sudoers.d:ro" \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+tzutalin/py2qt4
+make qt4py2;./labelImg.py
+</pre>
+
+<p align="justify">
+You can pull the image which has all of the installed and required dependencies. 
+</p>
+
+<pre align="justify" style="color: #000000"> 
+Usage
+Steps (PascalVOC)
+Build and launch using the instructions above.
+Click 'Change default saved annotation folder' in Menu/File
+Click 'Open Dir'
+Click 'Create RectBox'
+Click and release left mouse to select a region to annotate the rect box
+You can use right mouse to drag the rect box to copy or move it
+The annotation will be saved to the folder you specify.
+</pre>
+
+
+                </div>
+            </section>
+
+	
+        </main>
+
+		<footer class="site-footer">
+		<canvas id="footer-particles"></canvas>		
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>
