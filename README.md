@@ -1,7 +1,7 @@
 ### ✨ MoroccoAI-Data-Challenge ✨
 
 ## Abstract
-  This project provides a solution to Morocco-AI challenge (conference of december), which aims to detect the plate with the label name as type of ```XXXX-ﺏ-YY``` , our project Pipeline detect only 19 class called ```0,1,2,3,4,5,6,7,8,9 and ww ,ا, ب ,ج ,ش, و ,المغرب ,ه ,د``` . After that take the bounding box and get the text inside the bounding box. To get the text inside the bounding box our strategy is to use 2 neural networks with flow normalizing to detect each character. If the character has a projection far scale a normal distribution (the network is trained on semi-supervise strategy) the yolo proceeds to propose a new bounding box the final decision presents a strong confidence. The detection and recognition result lead us among the top 10% of this challenge.
+  This project provides a solution to Morocco-AI challenge (conference of december), which aims to detect the plate with the label name as type of ```XXXX-ﺏ-YY``` , our project Pipeline detect only 19 classes ```0,1,2,3,4,5,6,7,8,9 and ww ,ا, ب ,ج ,ش, و ,المغرب ,ه ,د``` . After the network it self take the bounding box and try to recognize the text inside the bounding box. To get the text correctly our strategy is to use two neural networks with deep flow normalizing block to detect each character. If the character has a projection far scale a normal distribution (the network is trained on semi-supervise strategy) the Yolo proceeds to propose a new bounding box the final decision presents a strong confidence. The detection and recognition result lead us among the top 10% of this challenge.
 
 <img src="images/workflow.png" alt="workflow">
 
@@ -36,6 +36,8 @@
   
   This is an unbalanced case of the classes, what it does is perform a log(y) transformation on the data just before the CNN input.
 <img src="images/non-eq.png" alt="">
+
+**Please note that our free dataset is available here: [https://www.malpr.ml/](https://www.malpr.ml/)
 
 4. **Downoald Weights and config files**
   All pretrained weights are saved on:  [Weights and config](https://drive.google.com/drive/folders/1qTvKYEfpLR-4hcFaeT11aB_bpCX3lQUi?usp=sharing)
