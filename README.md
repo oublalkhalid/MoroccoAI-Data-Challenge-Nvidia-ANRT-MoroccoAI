@@ -1,3 +1,4 @@
+# This paper won the Nvidia - ANRT - MoroccoAI  (conference of December 2021) 
 ### ✨ MoroccoAI-Data-Challenge ✨
 
 ## Abstract
