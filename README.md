@@ -6,7 +6,7 @@
 
 <img src="images/workflow.png" alt="workflow">
 
-# Plate Recognition Using YOLO and CNN  ✨
+# An advanced combination of semi-supervised Normalizing Flow & Yolo (YoloNF) to detect and recognize vehicle license plates  ✨
 
   - [Plate Recognition Using YOLO and CNN](#plate-recognition-using-yolo-and-cnn)
   - [Intorduction](#intorduction)
