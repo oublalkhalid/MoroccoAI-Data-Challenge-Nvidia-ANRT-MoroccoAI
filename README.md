@@ -1,6 +1,8 @@
 # This paper won the Nvidia - ANRT - MoroccoAI  (conference of December 2021) 
 ### ✨ MoroccoAI-Data-Challenge ✨
 
+[Read our paper: An advanced combination of semi-supervised Normalizing Flow & Yolo (YoloNF)](https://arxiv.org/abs/2207.10777)
+
 ## Abstract
   This project provides a solution to Morocco-AI challenge (conference of december), which aims to detect the plate with the label name as type of ```XXXX-ﺏ-YY``` , our project Pipeline detect only 19 classes ```0,1,2,3,4,5,6,7,8,9 and ww ,ا, ب ,ج ,ش, و ,المغرب ,ه ,د``` . After the network it self take the bounding box and try to recognize the text inside the bounding box. To get the text correctly our strategy is to use two neural networks with deep flow normalizing block to detect each character. If the character has a projection far scale a normal distribution (the network is trained on semi-supervise strategy) the Yolo proceeds to propose a new bounding box the final decision presents a strong confidence. The detection and recognition result lead us among the top 10% of this challenge.
 
@@ -109,4 +111,12 @@ Example 570.jpg from dataset -> output :
 
 You must first define some parameters like path_input, path_output, test_data (proposed for this challenge). and then run the 3 files in order ( preprocessig, training yolo, training yolo characters, then detection and recognition) 
 
-
+## Cite our work
+```
+@article{oublal2022advanced,
+  title={An advanced combination of semi-supervised Normalizing Flow \& Yolo (YoloNF) to detect and recognize vehicle license plates},
+  author={Oublal, Khalid and Dai, Xinyi},
+  journal={arXiv preprint arXiv:2207.10777},
+  year={2022}
+}
+```
